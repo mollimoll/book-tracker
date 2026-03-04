@@ -1,19 +1,19 @@
 import { Ecc, QrCode } from "../utils/qrcodegen";
 
 export const QRCode = ({
-  destination,
+  url,
   border = 1,
   lightColor = "white",
   darkColor = "black",
   className,
 }: {
-  destination: string;
+  url: string;
   border?: number;
   lightColor?: string;
   darkColor?: string;
   className?: string;
 }) => {
-  const qr = QrCode.encodeText(destination, Ecc.HIGH);
+  const qr = QrCode.encodeText(url, Ecc.HIGH);
   const viewBox = qr.size + border * 2;
   const paths: string[] = [];
   for (let y = 0; y < qr.size; y++) {

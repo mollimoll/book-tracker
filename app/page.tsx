@@ -14,7 +14,7 @@ export default function Home() {
           priority
         />
         <QRCode
-          destination="https://www.linkedin.com/in/molly-boyle/"
+          url="https://www.linkedin.com/in/molly-boyle/"
           className="w-48 h-48"
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
